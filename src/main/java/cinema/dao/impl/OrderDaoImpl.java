@@ -30,7 +30,7 @@ public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao {
             query.setParameter("user", user);
             return query.getResultList();
         } catch (Exception e) {
-            throw new DataProcessingException("Not found shopping cart for user " + user, e);
+            throw new DataProcessingException("Can`t get an order history for user: "+ user, e);
         }
     }
 }
