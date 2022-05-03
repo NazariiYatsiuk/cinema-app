@@ -8,5 +8,5 @@ import java.util.List;
 public interface OrderService {
     Order completeOrder(ShoppingCart shoppingCart);
 
-    List<Order> getByUser(User user);
+    List<Order> getOrdersHistory(User user);
 }
